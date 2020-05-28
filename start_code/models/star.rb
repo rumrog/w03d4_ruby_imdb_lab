@@ -32,4 +32,15 @@ class Star
       SqlRunner.run(sql)
     end
 
+    def self.all()
+      sql = "SELECT * FROM stars"
+      star_data = SqlRunner.run(sql)
+      return Star.map_items(star_data)
+  end
+    
+    def self.map_items(star_data)
+      result = star_data.map { |star| Star.new(star) }
+      return result
+    end
+
 end

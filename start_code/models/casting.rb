@@ -37,4 +37,15 @@ class Casting
     SqlRunner.run(sql)
   end
 
+  def self.all()
+    sql = "SELECT * FROM castings"
+    casting_data = SqlRunner.run(sql)
+    return Casting.map_items(casting_data)
+end
+
+  def self.map_items(casting_data)
+    result = casting_data.map { |casting| Casting.new( casting ) }
+    return result
+  end
+
 end
