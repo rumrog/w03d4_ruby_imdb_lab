@@ -18,12 +18,12 @@ movie2.save()
 movie3 = Movie.new ({ 'title' => 'Once Upon a Time', 'genre' => 'Thriller' })
 movie3.save()
 
-casting1 = Casting.new ({ 'star_id' => start1.id, 'movie_id' => movie1.id, 'fee' => 100 })
-casting1.save()
-casting2 = Casting.new ({ 'star_id' => start1.id, 'movie_id' => movie1.id, 'fee' => 500 })
-casting2.save()
-casting3 = Casting.new ({ 'star_id' => start1.id, 'movie_id' => movie1.id, 'fee' => 300 })
-casting3.save()
+# casting1 = Casting.new ({ 'star_id' => start1.id, 'movie_id' => movie1.id, 'fee' => 100 })
+# casting1.save()
+# casting2 = Casting.new ({ 'star_id' => start1.id, 'movie_id' => movie1.id, 'fee' => 500 })
+# casting2.save()
+# casting3 = Casting.new ({ 'star_id' => start1.id, 'movie_id' => movie1.id, 'fee' => 300 })
+# casting3.save()
 
 binding.pry
 nil
